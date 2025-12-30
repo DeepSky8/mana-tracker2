@@ -4,4 +4,19 @@
   @if (!state.boxSelected) {
   <app-mana-pack-type (selectedPack)="loadManaPack($event)" />
   }
+
+  @if (state.boxSelected){
+  <app-navigation />
+  <!-- <div>
+              <GameNavigation
+                manaState={manaState}
+                dispatchManaState={dispatchManaState}
+              />
+              <ManaDisplay
+                manaState={manaState}
+                dispatchManaState={dispatchManaState}
+              />
+            </div> -->
+
+  }
 </div>

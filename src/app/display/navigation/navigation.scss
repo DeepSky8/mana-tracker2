@@ -1,0 +1,26 @@
+@use "sass:color";
+@use "../../../styles/colors";
+@use "../../../styles/sizes";
+
+.navigation--spacing {
+    display: flex;
+    justify-content: space-around;
+}
+
+.button--undo {
+    background: colors.$light-red;
+    border: none;
+    border-bottom: 0.6rem solid color.adjust(colors.$light-red, $lightness: -10%);
+    font-weight: bold;
+    margin: sizes.$s-size;
+    padding: sizes.$s-size;
+}
+
+.button--new {
+    background: colors.$light-green;
+    border: none;
+    border-bottom: 0.6rem solid color.adjust(colors.$light-green, $lightness: -10%);
+    margin: sizes.$s-size;
+    font-weight: bold;
+    padding: sizes.$s-size;
+}

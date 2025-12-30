@@ -1,0 +1,17 @@
+@use "sass:color";
+@use "../../../styles/colors";
+@use "../../../styles/sizes";
+
+.navigation--spacing {
+    display: flex;
+    justify-content: space-around;
+}
+
+.button--landPacks {
+    background: colors.$light-green;
+    border: none;
+    border-bottom: 0.6rem solid color.adjust(colors.$light-green, $lightness: -10%);
+    font-weight: bold;
+    margin: sizes.$s-size;
+    padding: sizes.$s-size;
+}

@@ -24,6 +24,17 @@ export const defaultGameState: IGameState = {
     packUntapped: [],
 }
 
+// export enum packOptions {
+//     allyMana = `allyMana`,
+//     enemyMana = `enemyMana`,
+//     untappedMana = `untappedMana`,
+//     tappedMana = `tappedMana`,
+//     shockMana = `shockMana`,
+//     allyShock = `allyShock`,
+//     enemyShock = `enemyShock`,
+
+// }
+
 export const pack = {
     allyMana: [0, 1, 2, 3, 4, 10, 11, 12, 13, 14],
     enemyMana: [0, 1, 2, 3, 4, 15, 16, 17, 18, 19],

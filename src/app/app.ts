@@ -1,16 +1,16 @@
 import { Component, signal } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
-import { Header } from './header/header';
+import { Header } from './display/header/header';
 import { GameState } from './data/game-state/game-state';
+import { ManaPackType } from './display/mana-pack-type/mana-pack-type';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, Header],
+  imports: [Header,ManaPackType],
   templateUrl: './app.html',
   styleUrl: '../styles/styles.scss'
 })
 export class App extends GameState {
   protected readonly title = signal('mana-tracker');
-  
+
 
 }

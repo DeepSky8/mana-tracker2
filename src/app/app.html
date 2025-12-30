@@ -1,6 +1,7 @@
-
-<app-header [state]="state" (newGame)="newGame()"></app-header>
+<app-header [state]="state" (newGame)="newGame()" />
 <div class="content-container">
-  <router-outlet />
 
+  @if (!state.boxSelected) {
+  <app-mana-pack-type (selectedPack)="loadManaPack($event)" />
+  }
 </div>

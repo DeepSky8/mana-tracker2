@@ -1,0 +1,40 @@
+@use "sass:color";
+@use "../../styles/colors";
+@use "../../styles/sizes";
+
+.header {
+    background: colors.$light-brown;
+    margin-bottom: sizes.$s-size;
+    padding: sizes.$m-size 0;
+}
+
+// .content-container {
+//     margin: 0 auto;
+//     max-width: sizes.$content-max-width;
+//     padding: 0 sizes.$m-size;
+// }
+
+.header--spacing {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header__title {
+    font-size: sizes.$l-size;
+    margin: 0;
+}
+
+.header__subtitle {
+    font-size: sizes.$m-size;
+    font-weight: 500;
+    margin: 0;
+}
+
+.button--new {
+    background: colors.$light-green;
+    border: none;
+    border-bottom: 0.6rem solid color.adjust(colors.$light-green, $lightness: -10%);
+    margin: sizes.$s-size;
+    font-weight: bold;
+    padding: sizes.$s-size;
+}

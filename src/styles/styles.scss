@@ -1,0 +1,68 @@
+@use "sass:color";
+@use "../styles/colors";
+@use "../styles//sizes";
+
+:root {
+    font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+    line-height: 1.5;
+    font-weight: 600;
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-text-size-adjust: 100%;
+}
+
+body {
+    margin: auto;
+    padding: auto;
+    overflow-wrap: break-word;
+    text-wrap: balance;
+    hyphens: auto;
+    max-width: 100%;
+    background-color: colors.$brown-background;
+}
+
+.content-container {
+    margin: 0 auto;
+    max-width: sizes.$content-max-width;
+    padding: 0 sizes.$m-size;
+}
+
+html {
+    background: colors.$brown-background;
+    font-size: 62.5%;
+}
+
+body {
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: sizes.$m-size;
+    font-size: large;
+}
+
+h3 {
+    text-align: center;
+    margin: sizes.$s-size;
+}
+
+button {
+    cursor: pointer;
+}
+
+button:disabled {
+    cursor: default;
+}
+
+.is-active {
+    font-weight: bold;
+}
+
+.is-active {
+    cursor: default;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}

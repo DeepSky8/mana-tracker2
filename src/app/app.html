@@ -6,12 +6,12 @@
   }
 
   @if (state.boxSelected){
-  <app-navigation />
+  <app-navigation
+    (untapAll)="untapMana()"
+    (unpickMana)="undoPlayMana()"
+    (unsacMana)="undoSacrificeMana()"
+    (advanceTurn)="nextTurn()" />
   <!-- <div>
-              <GameNavigation
-                manaState={manaState}
-                dispatchManaState={dispatchManaState}
-              />
               <ManaDisplay
                 manaState={manaState}
                 dispatchManaState={dispatchManaState}

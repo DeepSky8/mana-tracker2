@@ -1,21 +1,25 @@
 <div class="navigation--spacing">
     <button
-        class="button--undo">Untap Mana</button>
+        class="button--undo"
+        (click)="untapAllMana()">Untap Mana
+    </button>
 
     <button
         [disabled]="!state().playedMana"
-        class="button--undo">
-        Pick a different land to play
+        class="button--undo"
+        (click)="unpickThisMana()"> Pick different Mana
     </button>
 
     <button
         [disabled]="state().sacrificedMana"
-        class="button--undo">
-        Return sacrified mana
+        class="button--undo"
+        (click)="unSacThisMana()">
+        Return sacrified Mana
     </button>
 
     <button
-        class="button--new">
+        class="button--new"
+        (click)="nextTurn()">
         Next Turn
     </button>
 

@@ -5,7 +5,7 @@
 
             <div class="d-flex flex-grow-1 justify-content-between">
                 <div class="ms-1">
-                    <h1 class="fw-bold">Mana Tracker</h1>
+                    <h1 class="fw-bold text-black">Mana Tracker</h1>
                     <h3 class=" mx-0 my-0">Battlebox Land Packs</h3>
                 </div>
 
@@ -13,6 +13,7 @@
                     <button
                         type="button"
                         class="btn btn-primary btn-lg align-self-center fw-bold fs-2"
+                        [ngClass]="{'shadow-lg':state().boxSelected}"
                         [disabled]='!state().boxSelected'
                         (click)="generateNewGame()">New Game</button>
                 </div>

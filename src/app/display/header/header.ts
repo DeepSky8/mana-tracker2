@@ -1,9 +1,10 @@
 import { Component, EventEmitter, input, Output } from '@angular/core';
 import { defaultGameState, IGameState } from '../../data/library';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-header',
-  imports: [],
+  imports: [CommonModule],
   templateUrl: './header.html',
   styleUrls: ['../../../styles/styles.scss','./header.scss'],
 })

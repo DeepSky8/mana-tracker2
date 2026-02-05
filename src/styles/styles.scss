@@ -2,7 +2,8 @@
 @use "../styles/colors";
 @use "../styles//sizes";
 @use "bootstrap/scss/bootstrap" with (
-    $primary: #76b776
+    $primary: #76b776,
+    $danger: #cc8484
 );
 
 :root {

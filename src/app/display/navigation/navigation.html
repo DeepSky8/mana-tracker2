@@ -1,24 +1,28 @@
-<div class="navigation--spacing">
+<div class="d-flex flex-fill justify-content-between pt-2">
     <button
-        class="button--undo"
+        type="button"
+        class="btn btn-danger me-2 fw-bold fs-3 btn-lg"
         (click)="untapAllMana()">Untap Mana
     </button>
 
     <button
+        type="button"
         [disabled]="!state().playedMana"
-        class="button--undo"
-        (click)="unpickThisMana()"> Pick different Mana
+        class="btn btn-danger me-2 fw-bold fs-3 btn-lg"
+        (click)="unpickThisMana()"> Pick new Mana
     </button>
 
     <button
+        type="button"
         [disabled]="state().sacrificedMana"
-        class="button--undo"
+        class="btn btn-danger me-2 fw-bold fs-3 btn-lg"
         (click)="unSacThisMana()">
-        Return sacrified Mana
+        Return Mana
     </button>
 
     <button
-        class="button--new"
+        type="button"
+        class="btn btn-primary  fw-bold fs-3 btn-lg"
         (click)="nextTurn()">
         Next Turn
     </button>

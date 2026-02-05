@@ -1,5 +1,5 @@
 <app-header [state]="state" (newGame)="newGame()" />
-<div class="content-container">
+<div class="container">
 
   @if (!state.boxSelected) {
   <app-mana-pack-type (selectedPack)="loadManaPack($event)" />

@@ -1,49 +1,57 @@
-<div class="container">
+<div class="row row-cols-1 row-cols-sm-2 row-cols-lg-6 g-2 py-4 ">
 
-    <div class=" py-4 d-flex  flex-wrap justify-content-around ">
+    <div class="col">
         <button
             type="button"
-            class="btn btn-primary mb-2 fw-bold fs-2 btn-lg shadow-lg col-12 col-md-5  "
+            class="btn btn-primary fw-bold fs-2 shadow-lg w-100 h-100 "
             (click)="selectManaPack(pack.allyMana)">
             Ally Tap Lands (default)
         </button>
-    
-    
+    </div>
+
+    <div class="col">
         <button
             type="button"
-            class="btn btn-primary mb-2 fw-bold fs-2 btn-lg shadow-lg col-12 col-md-5  "
+            class="btn btn-primary fw-bold fs-2 shadow-lg w-100 h-100 "
             (click)="selectManaPack(pack.enemyMana)">
             Enemy Tap Lands
         </button>
-    
+    </div>
+
+    <div class="col">
         <button
             type="button"
-            class="btn btn-primary mb-2 fw-bold fs-2 btn-lg shadow-lg col-12 col-md-5  "
+            class="btn btn-primary fw-bold fs-2 shadow-lg w-100 h-100 "
             (click)="selectManaPack(pack.untappedMana)">
             Mono Lands Only
         </button>
-    
+    </div>
+
+    <div class="col">
         <button
             type="button"
-            class="btn btn-primary mb-2 fw-bold fs-2 btn-lg shadow-lg col-12 col-md-5  "
+            class="btn btn-primary fw-bold fs-2 shadow-lg w-100 h-100 "
             (click)="selectManaPack(pack.allyShock)">
             Ally Shock Lands
         </button>
-    
+    </div>
+
+    <div class="col">
         <button
             type="button"
-            class="btn btn-primary mb-2 fw-bold fs-2 btn-lg shadow-lg col-12 col-md-5  "
+            class="btn btn-primary fw-bold fs-2 shadow-lg w-100 h-100 "
             (click)="selectManaPack(pack.enemyShock)">
             Enemy Shock Lands
         </button>
-    
+    </div>
+
+    <div class="col">
         <button
             type="button"
-            class="btn btn-primary mb-2 fw-bold fs-2 btn-lg shadow-lg col-12 col-md-5  "
+            class="btn btn-primary fw-bold fs-2 shadow-lg w-100 h-100 "
             (click)="selectManaPack(pack.tappedMana)">
             Shock Lands Only
         </button>
-
-
     </div>
+
 </div>

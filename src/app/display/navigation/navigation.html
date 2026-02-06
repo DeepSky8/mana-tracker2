@@ -1,30 +1,48 @@
-<div class="d-flex flex-fill justify-content-between py-4">
-    <button
-        type="button"
-        class="btn btn-danger me-2 fw-bold fs-3 btn-lg col-3"
-        (click)="untapAllMana()">Untap Mana
-    </button>
+<div class="container ">
+    <div class="row g-2 py-4">
+        <div class="col-3">
 
-    <button
-        type="button"
-        [disabled]="!state().playedMana"
-        class="btn btn-danger me-2 fw-bold fs-3 btn-lg col-3"
-        (click)="unpickThisMana()"> Pick new Mana
-    </button>
+            <button
+                type="button"
+                class="btn btn-danger fw-bold fs-2 btn-lg w-100 h-100  "
+                (click)="untapAllMana()">
+                Untap Mana
+            </button>
+        </div>
 
-    <button
-        type="button"
-        [disabled]="state().sacrificedMana"
-        class="btn btn-danger me-2 fw-bold fs-3 btn-lg col-3"
-        (click)="unSacThisMana()">
-        Return Mana
-    </button>
 
-    <button
-        type="button"
-        class="btn btn-primary  fw-bold fs-3 btn-lg col-3"
-        (click)="nextTurn()">
-        Next Turn
-    </button>
+        <div class="col-3">
+            <button
+                type="button"
+                [disabled]="!state().playedMana"
+                class="btn btn-danger fw-bold fs-2 btn-lg w-100 h-100"
+                (click)="unpickThisMana()">
+                Pick new Mana
+            </button>
+
+        </div>
+        <div class="col-3">
+            <button
+                type="button"
+                [disabled]="state().sacrificedMana"
+                class="btn btn-danger fw-bold fs-2 btn-lg w-100 h-100 "
+                (click)="unSacThisMana()">
+                Return Mana
+            </button>
+
+        </div>
+        <div class="col-3">
+            <button
+                type="button"
+                class="btn btn-primary fw-bold fs-2 btn-lg w-100 h-100 "
+                (click)="nextTurn()">
+                Next Turn
+            </button>
+
+        </div>
+
+    </div>
 
 </div>
+
+<!-- flex-fill justify-content-between py-4 row -->

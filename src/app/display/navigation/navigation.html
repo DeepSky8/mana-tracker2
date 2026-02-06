@@ -1,28 +1,28 @@
-<div class="d-flex flex-fill justify-content-between pt-2">
+<div class="d-flex flex-fill justify-content-between py-4">
     <button
         type="button"
-        class="btn btn-danger me-2 fw-bold fs-3 btn-lg"
+        class="btn btn-danger me-2 fw-bold fs-3 btn-lg col-3"
         (click)="untapAllMana()">Untap Mana
     </button>
 
     <button
         type="button"
         [disabled]="!state().playedMana"
-        class="btn btn-danger me-2 fw-bold fs-3 btn-lg"
+        class="btn btn-danger me-2 fw-bold fs-3 btn-lg col-3"
         (click)="unpickThisMana()"> Pick new Mana
     </button>
 
     <button
         type="button"
         [disabled]="state().sacrificedMana"
-        class="btn btn-danger me-2 fw-bold fs-3 btn-lg"
+        class="btn btn-danger me-2 fw-bold fs-3 btn-lg col-3"
         (click)="unSacThisMana()">
         Return Mana
     </button>
 
     <button
         type="button"
-        class="btn btn-primary  fw-bold fs-3 btn-lg"
+        class="btn btn-primary  fw-bold fs-3 btn-lg col-3"
         (click)="nextTurn()">
         Next Turn
     </button>

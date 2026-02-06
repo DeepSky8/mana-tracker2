@@ -1,49 +1,49 @@
-<div class='manaPackContainer'>
-    <div>
+<div class="container">
 
+    <div class=" py-4 d-flex  flex-wrap justify-content-center ">
+        <button
+            type="button"
+            class="btn btn-primary mx-1 mb-2 fw-bold fs-2 btn-lg shadow-lg col-12 col-md-5  "
+            (click)="selectManaPack(pack.allyMana)">
+            Ally Tap Lands (default)
+        </button>
+    
+    
+        <button
+            type="button"
+            class="btn btn-primary mx-1 mb-2 fw-bold fs-2 btn-lg shadow-lg col-12 col-md-5  "
+            (click)="selectManaPack(pack.enemyMana)">
+            Enemy Tap Lands
+        </button>
+    
+        <button
+            type="button"
+            class="btn btn-primary mx-1 mb-2 fw-bold fs-2 btn-lg shadow-lg col-12 col-md-5  "
+            (click)="selectManaPack(pack.untappedMana)">
+            Mono Lands Only
+        </button>
+    
+        <button
+            type="button"
+            class="btn btn-primary mx-1 mb-2 fw-bold fs-2 btn-lg shadow-lg col-12 col-md-5  "
+            (click)="selectManaPack(pack.allyShock)">
+            Ally Shock Lands
+        </button>
+    
+        <button
+            type="button"
+            class="btn btn-primary mx-1 mb-2 fw-bold fs-2 btn-lg shadow-lg col-12 col-md-5  "
+            (click)="selectManaPack(pack.enemyShock)">
+            Enemy Shock Lands
+        </button>
+    
+        <button
+            type="button"
+            class="btn btn-primary mx-1 mb-2 fw-bold fs-2 btn-lg shadow-lg col-12 col-md-5  "
+            (click)="selectManaPack(pack.tappedMana)">
+            Shock Lands Only
+        </button>
 
-        <div class="navigation--spacing">
-            <button
-                (click)="selectManaPack(pack.allyMana)"
-                class="button--landPacks">
-                Ally Tap Lands (default)
-            </button>
-
-
-            <button
-                (click)="selectManaPack(pack.enemyMana)"
-                class="button--landPacks">
-                Enemy Tap Lands
-            </button>
-
-            <button
-                (click)="selectManaPack(pack.untappedMana)"
-                class="button--landPacks">
-                Mono Lands Only
-            </button>
-        </div>
-
-
-        <div class="navigation--spacing">
-            <button
-                (click)="selectManaPack(pack.allyShock)"
-                class="button--landPacks">
-                Ally Shock Lands
-            </button>
-
-            <button
-                (click)="selectManaPack(pack.enemyShock)"
-                class="button--landPacks">
-                Enemy Shock Lands
-            </button>
-
-            <button
-                (click)="selectManaPack(pack.tappedMana)"
-                class="button--landPacks">
-                Shock Lands Only
-            </button>
-        </div>
 
     </div>
-
 </div>

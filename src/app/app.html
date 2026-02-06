@@ -1,11 +1,11 @@
-<app-header [state]="state" (newGame)="newGame()" />
+<app-header [state]="state()" (newGame)="newGame()" />
 <div class="container">
 
-  @if (!state.boxSelected) {
+  @if (!state().boxSelected) {
   <app-mana-pack-type (selectedPack)="loadManaPack($event)" />
   }
 
-  @if (state.boxSelected){
+  @if (state().boxSelected){
   <app-navigation
     (untapAll)="untapMana()"
     (unpickMana)="undoPlayMana()"

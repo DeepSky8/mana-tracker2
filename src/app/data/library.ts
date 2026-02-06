@@ -5,8 +5,8 @@ export interface IGameState {
     availableMana: number[],
     tappedMana: number[],
     sacrificedMana: number[],
-    lastPlayed: number | null,
-    lastSacrified: number | null;
+    lastPlayed: number,
+    lastSacrified: number,
     packTapped: number[],
     packUntapped: number[],
 }
@@ -18,8 +18,8 @@ export const defaultGameState: IGameState = {
     tappedMana: [],
     playedMana: false,
     sacrificedMana: [],
-    lastPlayed: null,
-    lastSacrified: null,
+    lastPlayed: 20,
+    lastSacrified: 20,
     packTapped: [],
     packUntapped: [],
 }
